@@ -1,0 +1,305 @@
+.search-box {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2; 
+}
+
+.search-box input {
+    min-width: 320px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #666; 
+    flex-grow: 1;
+}
+
+.search-box .search-icon {
+    margin: 8px;
+    color: #666; 
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.bg-container {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: bottom;
+    color: #fff; 
+    padding-left: 6%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+}
+#active{
+    border-bottom: solid 2px black;
+}
+#active a{
+    font-weight: bold;
+}
+#postnav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.greybtn{
+    background-color: rgb(232, 232, 232);
+}
+.dpimg{
+    margin: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.recommended h3{
+    font-weight: normal;
+    font-size: large;
+} 
+.posttag{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+.post-container {
+    margin: 20px;
+    border-radius: 8px;
+    border: solid 1px rgba(210, 210, 210, 0.799);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: white;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header .icon {
+    font-size: 20px;
+    color: #f0c429;
+    margin-right: 5px;
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.post-text {
+    margin-bottom: 10px;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+}
+
+.post-author .author-name {
+    font-weight: bold;
+}
+
+.post-stats {
+    display: flex;
+    align-items: center;
+}
+
+.post-stats .views {
+    margin-right: 10%;
+}
+
+.post-stats .share {
+    background-color: rgb(229, 229, 229);
+    font-size: 18px;
+    color: #333;
+}
+#backbtn, #androidleave{
+    margin-top: 2%;
+    color: white;
+}
+#androidleave{
+    border: solid 1px white;
+    float: right;
+    margin-right: 5%;
+}
+#androidleave:hover{
+    border: none;
+    background-color: #33333341;
+}
+
+#desktopleave{
+    border: solid 1px black;
+}
+.androidnav {
+    display: none;
+}
+
+#smallnav{
+    display: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#desktopregister{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.434);
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    display: none;
+    z-index: 3;
+}
+
+#androidregister{
+    position: fixed;
+    bottom: 0%;
+    z-index: 4;
+    display: none;
+}
+
+#androidcard{
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#desktopcard{
+    max-width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#signup, #signin{
+    padding: 5%;
+}
+#crossbtn{
+    background-color: white; 
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    transition: all ease-in-out 3ms; 
+}
+#crossbtn:hover{
+    border: solid 1px grey;
+}
+#crossbtn:active{
+    transform: scale(1.05);
+}
+#crossbtnandroid1, #crossbtnandroid2{
+    background-color: white; 
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    float: right;
+    transition: all ease-in-out 3ms; 
+}
+#crossbtnandroid1:hover , #crossbtnandroid2:hover{
+    border: solid 1px grey;
+}
+#crossbtnandroid1:active, #crossbtnandroid2:active{
+    transform: scale(1.05);
+}
+.whitebtn{
+    padding: 2%;
+    background-color: white;
+    border: solid 1px rgb(185, 185, 185);
+    border-radius: 5px;
+}
+.whitebtn:hover{
+    border: none;
+}
+.whitebtn:active{
+    border: solid 1px black;
+}
+
+#postnav{
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+.remove-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+} 
+
+#androidregisterbtn{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,69,177,1) 72%);
+    border: none;
+    border-radius: 50%;
+    scale: 1.2;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    #topdesktopbar, #postnav{
+        display: none;
+    }
+    #sidebar{
+        display: none;
+    }
+    #smallnav{
+        display: block;
+    }
+    .bg-container{
+        height: 250px;
+        justify-content: space-between;
+    }
+    .androidnav {
+        display: block;
+    }
+    .post-container{
+        width: 95%;
+    }
+    #articles{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #androidregisterbtn{
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px){
+    #navcontent{
+        margin: 0% 20%;
+    }
+}
